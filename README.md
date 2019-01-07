@@ -72,22 +72,11 @@ The table below lists each developer, the URL of their respective
 project, and the assigned
 reviewers.
 
-| Developer | Git\_URL                                              | Reviewer1 | Reviewer2 |
-| :-------- | :---------------------------------------------------- | :-------- | :-------- |
-| Uhorchak  | <https://github.com/nuhorchak/RClean>                 | Trigo     | Johnson   |
-| Munson    | <https://github.com/evan-l-munson/SAoTD>              | Kalhoff   | Meyer     |
-| Ramirez   | <https://github.com/RachelRamirez/NPS>                | Gallagher | Elliott   |
-| Smith     | <https://github.com/JSmith146/CoRpEx>                 | Stuntz    | Munson    |
-| Trigo     | <https://github.com/citation891/MCAC>                 | Sevier    | Smith     |
-| Kalhoff   | <https://github.com/AFIT-R/instaExtract>              | Meyer     | Ramirez   |
-| Butt      | <https://github.com/SpencerButt/IDPS-LAAD>            | Elliott   | Trigo     |
-| Elliott   | <https://github.com/jtelliott/attrition-forecast>     | Johnson   | Sevier    |
-| Johnson   | <https://github.com/slackliner33/Yahoo_DFS_Optimizer> | Butt      | Small     |
-| Sevier    | <https://github.com/williamcsevier/TextML>            | Small     | Stuntz    |
-| Small     | <https://github.com/msmall318/Boots>                  | Munson    | Uhorchak  |
-| Gallagher | <https://github.com/gallagherj2008/SWAT>              | Uhorchak  | Kalhoff   |
-| Stuntz    |                                                       | Smith     | Gallagher |
-| Meyer     | <https://github.com/AFIT-R/MODA>                      | Ramirez   | Butt      |
+| Developer | Git\_URL                             | Reviewer1 | Reviewer2 |
+| :-------- | :----------------------------------- | :-------- | :-------- |
+| Chon      | <https://github.com/chon/reponame>   | Walton    | Watson    |
+| Walton    | <https://github.com/walton/reponame> | Watson    | Chon      |
+| Watson    | <https://github.com/watson/reponame> | Chon      | Walton    |
 
 List of developers, projects, and assigned reviewers for OPER782 (Winter
 2018)

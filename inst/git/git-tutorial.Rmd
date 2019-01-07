@@ -132,7 +132,7 @@ Your workflow - <font color='green'><u>with</u></font> Git
 
 # OK, I'm interested in using Git/Github how do I get Started?
 
-## Installing Git <!--Kallhoff-->
+## Installing Git
 
 - Installing Git is simple - on Mac/Windows/Linux/Unix
 
@@ -144,7 +144,7 @@ Your workflow - <font color='green'><u>with</u></font> Git
 knitr::include_graphics("images/win-git.png")
 ```
 
-## Setting up a GitHub account <!--Stuntz-->
+## Setting up a GitHub account
 
 - First, navigate to [https://github.com/](https://github.com/)
 
@@ -168,7 +168,7 @@ knitr::include_graphics("images/signup.png")
 knitr::include_graphics("images/my-profile.png")
 ```
 
-## Configure Git for first time <!--Munson-->
+## Configure Git for first time
 
 - After installing Git and setting up a Github account
 
@@ -197,15 +197,15 @@ git config --global user.email auburngrads@live.com
 
 # Understanding Version Control Systems
 
-## What are version control systems? <!--Butt-->
+## What are version control systems?
 
-## Why should some use a version control system? <!--Elliot-->
+## Why should some use a version control system?
 
-## What is a Centralized Version Control System (CVCS)? <!--Gallagher-->
+## What is a Centralized Version Control System (CVCS)?
 
-## What is a Decentralized (aka Distributed) Version Control System (DVCS)? <!--Johnson-->
+## What is a Decentralized (aka Distributed) Version Control System (DVCS)?
 
-## What are the advantages of using a DVCS instead of a CVCS? <!--Uhorchak-->
+## What are the advantages of using a DVCS instead of a CVCS?
 
 # Using Git - Overview
 
@@ -221,7 +221,7 @@ git config --global user.email auburngrads@live.com
 
 - Remember <focus>Git $\ne$ Github</focus>
 
-## Many Ways To Use Git <!--Trigo-->
+## Many Ways To Use Git
 
 - At the **command line**
 
@@ -256,7 +256,7 @@ git config --global user.email auburngrads@live.com
 - Check out the [Git Flow interactive](https://guides.github.com/introduction/flow/)
 
 
-## The basic Git commands you'll use/need <!--Ramirez/Sevier-->
+## The basic Git commands you'll use/need
 
 - `cd` (change directories)
 - `git init` (initialize a folder as a Git repo)
@@ -310,7 +310,15 @@ git add --all
 git commit -m "first commit"
 ```
 
-## The .git directory <!--Small-->
+## What's in the .git directory?
+
+- The `.git` folder contains metadata about your project required to support version control using Git, this includes:
+
+    + Information about each commit
+    + The remote repository address
+    + A log of your commit history so that you can roll back to a prior version
+
+- For more info about what happens with the files in this directory, <a target=" " href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Click Here</a>.
 
 # Using Git - Syncing with GitHub
 
@@ -344,7 +352,7 @@ knitr::include_graphics("images/new-repo-3.png")
 knitr::include_graphics("images/new-repo-4.png")
 ```
 
-## Working with Github remotes <!--Smith-->
+- Working with Git <a target=" " href="https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes">Remotes</a>
 
 # Using Git - Making changes and pushing them to GitHub
 

@@ -62,11 +62,13 @@ reviews <- function(n.choices = 13) {
   rev1 = rep(0, length(base))
   rev2 = rep(0, length(base))
 
+  resample <- function(x, ...) x[sample.int(length(x), ...)]
+  
   for(i in 1:(length(base)-1)) {
 
     choices1 <- base[base != base[i] & !base %in% rev1[1:i]]
 
-    rev1[i] <- sample(choices1, size = 1)
+    rev1[i] <- resample(choices1, size = 1)
 
   }
 
@@ -76,7 +78,7 @@ reviews <- function(n.choices = 13) {
 
     choices2 <- base[base != base[i] & base != rev1[i] & !base %in% rev2[1:i]]
 
-    rev2[i] <- sample(choices2, size = 1)
+    rev2[i] <- resample(choices2, size = 1)
 
   }
 
@@ -90,35 +92,13 @@ reviews <- function(n.choices = 13) {
 ```
 
 ```{r, echo=FALSE}
-students <- c('Uhorchak',
-              'Munson',
-              'Ramirez',
-              'Smith',
-              'Trigo',
-              'Kalhoff',
-              'Butt',
-              'Elliott',
-              'Johnson',
-              'Sevier',
-              'Small',
-              'Gallagher',
-              'Stuntz',
-              'Meyer')
+students <- c('Chon',
+              'Walton',
+              "Watson")
 
-git_url <- c('https://github.com/nuhorchak/RClean',
-             'https://github.com/evan-l-munson/SAoTD',
-             'https://github.com/RachelRamirez/NPS',
-             'https://github.com/JSmith146/CoRpEx',
-             'https://github.com/citation891/MCAC',
-             'https://github.com/AFIT-R/instaExtract',
-             'https://github.com/SpencerButt/IDPS-LAAD',
-             'https://github.com/jtelliott/attrition-forecast',
-             'https://github.com/slackliner33/Yahoo_DFS_Optimizer',
-             'https://github.com/williamcsevier/TextML',
-             'https://github.com/msmall318/Boots',
-             'https://github.com/gallagherj2008/SWAT',
-             '',
-             'https://github.com/AFIT-R/MODA')
+git_url <- c('https://github.com/chon/reponame',
+             'https://github.com/walton/reponame',
+             'https://github.com/watson/reponame')
 ```
 
 The table below lists each developer, the URL of their respective project, and the assigned reviewers. 

@@ -1,16 +1,16 @@
 ---
-title: "2017 College Football National Championship"
+title: "2018 College Football National Championship"
 subtitle: "Final Score Prediction"
-date: "January 8, 2018"
+date: "January 7, 2019"
 output: 
   html_document:
     df_print: 'kable'
 params:
   AL: 26
-  GA: 23
+  CL: 23
 ---
 
-```{r setup}
+```{r setup, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -19,26 +19,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r, echo=FALSE}
 scores <- 
   tibble::tribble(
-~Name,              ~AL, ~GA,
-"Jason Freels",      21,  31,
-"Spencer Butt",      24,  17,
-"Jacob Elliott",     56,  07,
-"James Gallagher",   23,  17,
-"Jake Johnson",      18,  21,
-"Anthony Kallhoff",  38,  31,
-"Evan Munson",       14,  28,
-"Rachel Ramirez",    30,  18,
-"William Sevier",    10,  17,
-"Matthew Small",     21,  24,
-"Jeffrey Smith",     27,  24,
-"Sean Stuntz",       32,  28,
-"Alexander Trigo",   27,  16,
-"Nicholas Uhorchak", 24,  28
+~Name,              ~AL, ~CL,
+"Jason Freels",      40,  27,
+"Steven Chon",       00,  00,
+"Ryan Walton",       00,  00,
+"Marydell Watson",   00,  00
 )
 ```
 
 ```{r, echo=FALSE}
-scores$diff <- abs(scores$AL - params$AL) + abs(scores$GA - params$GA)
+scores$diff <- abs(scores$AL - params$AL) + abs(scores$CL - params$CL)
 
 scores$rank <- rank(scores$diff)
 scores[order(scores$rank),]
