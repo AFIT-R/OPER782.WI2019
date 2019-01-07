@@ -19,11 +19,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r, echo=FALSE}
 scores <- 
   tibble::tribble(
-~Name,              ~AL, ~CL,
-"Jason Freels",      40,  27,
-"Steven Chon",       00,  00,
-"Ryan Walton",       00,  00,
-"Marydell Watson",   00,  00
+~Name,     ~AL, ~CL,
+"Freels",   40,  27,
+"Chon",     00,  00,
+"Walton",   00,  00,
+"Watson",   00,  00
 )
 ```
 

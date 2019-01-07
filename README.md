@@ -74,9 +74,9 @@ reviewers.
 
 | Developer | Git\_URL                             | Reviewer1 | Reviewer2 |
 | :-------- | :----------------------------------- | :-------- | :-------- |
-| Chon      | <https://github.com/chon/reponame>   | Walton    | Watson    |
-| Walton    | <https://github.com/walton/reponame> | Watson    | Chon      |
-| Watson    | <https://github.com/watson/reponame> | Chon      | Walton    |
+| Chon      | <https://github.com/chon/reponame>   | Watson    | Walton    |
+| Walton    | <https://github.com/walton/reponame> | Chon      | Watson    |
+| Watson    | <https://github.com/watson/reponame> | Walton    | Chon      |
 
 List of developers, projects, and assigned reviewers for OPER782 (Winter
 2018)
